@@ -3,7 +3,7 @@ import React from 'react'
 function Header() {
   return (
     <div>
-      <h2>Contact</h2>
+      <h1>Contact Management App</h1>
     </div>
   )
 }
