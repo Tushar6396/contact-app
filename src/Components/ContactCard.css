@@ -1,0 +1,31 @@
+.item{
+    display: flex;
+    background-color: white;
+    color: #1b1b2f;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #1b1b2f;
+    border-radius: 0.5rem;
+}
+
+.item .contact{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+
+}
+
+.item .contact p{
+    font-weight: 550;
+}
+
+.item button{
+    min-width: 10%;
+    background-color: #ff0000;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    border: 1px solid #ff0000;
+    border-radius: 0.5em;
+}

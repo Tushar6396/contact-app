@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './AddContact.css'
 
 function AddContact(props) {
 
@@ -26,9 +27,7 @@ function AddContact(props) {
           <label htmlFor="name">Name</label>
           <input type="text" placeholder='name' 
           value={name} onChange={(e) => setName(e.target.value)} />
-        </fieldset>
 
-        <fieldset>
           <label htmlFor="email">Email</label>
           <input type="email" placeholder='email'
           value={email} onChange={(e) => setEmail(e.target.value)} />
@@ -37,6 +36,7 @@ function AddContact(props) {
         <input className='add-btn' type='submit' value='Add' />
 
       </form>
+
     </div>
   )
 }

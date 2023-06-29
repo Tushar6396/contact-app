@@ -1,0 +1,54 @@
+.addContactComponent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.addContactComponent h2{
+    padding: 1rem;
+}
+
+.addContactComponent form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.addContactComponent form fieldset{
+    padding: 1rem;
+    border: none;
+    font-weight: 550;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.addContactComponent form fieldset input{
+    padding: 0.5em;
+    margin: 0.5em 0;
+    outline: none;
+    background-color: #1b1b1f;
+    color: white;
+    border: 1px solid #1b1b1f;
+    border-radius: 0.5em;
+    font-size: 16px;
+}
+
+.addContactComponent form .add-btn{
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    resize: none;
+    min-width: 12%;
+    border-radius: 0.5em;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0000ff;
+    border: 1px solid #0000ff;
+}
