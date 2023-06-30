@@ -15,7 +15,11 @@ function ContactCard(props) {
                 <h3 className="name">{name}</h3>
                 <p className="email">{email}</p>                
             </div>
-            <button className="delete-icon" onClick={handleDelete}>Delete</button>
+            <div className="icons">
+              <button className='edit-icon'>Edit</button>
+              <button className="delete-icon" onClick={handleDelete}>Delete</button>
+            </div>
+            
         </div>
     </>
   )
