@@ -21,6 +21,12 @@ function App() {
     setContacts(updatedContacts)
   }
 
+const contactAfterEdit = (latestContact,index) => {
+  const updatedContacts = [...contacts]
+  updatedContacts[index] = latestContact
+  setContacts(updatedContacts);
+};
+  
   useEffect(() => {
     const storedContact =  JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY))
     if(storedContact){
@@ -42,7 +48,8 @@ function App() {
     <div className='app'>
        <Header />
        <AddContact addContactHandler={addContactHandler}/>
-       <ContactList contacts={contacts} deleteContactHandler= {deleteContactHandler} /> 
+       <ContactList contacts={contacts} deleteContactHandler= {deleteContactHandler} 
+       contactAfterEdit={contactAfterEdit}/> 
     </div>
   );
 }
