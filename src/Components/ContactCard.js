@@ -51,15 +51,22 @@ function ContactCard(props) {
         </div>
 
         {isModalOpen && (
-          <div className='modal'>
+          <div className='modal'>        
+            <div className="modal-content">
+              <h3>Edit Contact</h3>
               <label>
-                Name <input type='text' placeholder='name' onChange={handleNameChange} />
+                Name 
               </label>
+              <input type='text' placeholder='name' onChange={handleNameChange} />
               <label>
-                Email <input type='email' placeholder='email' onChange={handleEmailChange} />
+                Email 
               </label>
-              <button onClick={() => {handleSave()}}>Save</button>
-              <button onClick={() => {setModalOpen(false)}}>Cancel</button>
+              <input type='email' placeholder='email' onChange={handleEmailChange} />
+              <div className="buttons">
+                <button onClick={() => {handleSave()}} className='save-btn'>Save</button>
+                <button onClick={() => {setModalOpen(false)}} className='cancel-btn'>Cancel</button>
+              </div>
+            </div>
           </div>
         )}
     </>
